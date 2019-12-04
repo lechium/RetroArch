@@ -24,7 +24,7 @@
 #include <AvailabilityMacros.h>
 
 #include "../../tasks/tasks_internal.h"
-
+#include "../drivers_joypad_categories.m"
 #import <GameController/GameController.h>
 
 #ifndef MAX_MFI_CONTROLLERS
