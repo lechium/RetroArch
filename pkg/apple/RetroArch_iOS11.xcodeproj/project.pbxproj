@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32841FD0239760A80024F05B /* retroarch.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 32841FCF239760A80024F05B /* retroarch.cfg */; };
 		9204BE0D1D319EF300BD49DB /* griffin_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 50521A431AA23BF500185CC9 /* griffin_objc.m */; };
 		9204BE101D319EF300BD49DB /* griffin.c in Sources */ = {isa = PBXBuildFile; fileRef = 501232C9192E5FC40063A359 /* griffin.c */; };
 		9204BE121D319EF300BD49DB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5040F04F1AE47ED4006F6972 /* libz.dylib */; };
@@ -74,6 +75,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32841F8B23975F140024F05B /* apple_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apple_platform.h; sourceTree = "<group>"; };
+		32841F8C23975F140024F05B /* cocoa_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cocoa_common.h; sourceTree = "<group>"; };
+		32841F8D23975F140024F05B /* cocoa_common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoa_common.m; sourceTree = "<group>"; };
+		32841F8E23975F140024F05B /* cocoa_defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cocoa_defines.h; sourceTree = "<group>"; };
+		32841F8F23975F140024F05B /* cocoatouch_menu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoatouch_menu.m; sourceTree = "<group>"; };
+		32841F9023975F140024F05B /* ui_cocoa_application.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ui_cocoa_application.m; sourceTree = "<group>"; };
+		32841F9123975F140024F05B /* ui_cocoa_browser_window.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ui_cocoa_browser_window.m; sourceTree = "<group>"; };
+		32841F9223975F140024F05B /* ui_cocoa_msg_window.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ui_cocoa_msg_window.m; sourceTree = "<group>"; };
+		32841F9323975F140024F05B /* ui_cocoa_window.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ui_cocoa_window.m; sourceTree = "<group>"; };
+		32841FC123975F140024F05B /* ui_cocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_cocoa.h; sourceTree = "<group>"; };
+		32841FC223975F140024F05B /* ui_cocoa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ui_cocoa.m; sourceTree = "<group>"; };
+		32841FC323975F140024F05B /* ui_cocoatouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ui_cocoatouch.m; sourceTree = "<group>"; };
+		32841FCF239760A80024F05B /* retroarch.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = retroarch.cfg; sourceTree = "<group>"; };
 		501232C9192E5FC40063A359 /* griffin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = griffin.c; path = ../../griffin/griffin.c; sourceTree = SOURCE_ROOT; };
 		501881EB184BAD6D006F665D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		501881ED184BB54C006F665D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -130,11 +144,6 @@
 		92CC05C121FE3C6D00FF79F0 /* WebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServer.m; sourceTree = "<group>"; };
 		92CC05C421FEDC9F00FF79F0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		92CC05C621FEDD0B00FF79F0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		92D3D56B232D86AC001B0D86 /* cocoa_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cocoa_common.h; path = ../../../../../../ui/drivers/cocoa/cocoa_common.h; sourceTree = "<group>"; };
-		92D3D56C232D86AC001B0D86 /* cocoatouch_menu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = cocoatouch_menu.m; path = ../../../../../../ui/drivers/cocoa/cocoatouch_menu.m; sourceTree = "<group>"; };
-		92D3D56D232D86AC001B0D86 /* cocoa_common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = cocoa_common.m; path = ../../../../../../ui/drivers/cocoa/cocoa_common.m; sourceTree = "<group>"; };
-		92D3D56F232D86AC001B0D86 /* cocoa_defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cocoa_defines.h; path = ../../../../../../ui/drivers/cocoa/cocoa_defines.h; sourceTree = "<group>"; };
-		92D3D572232D8AEF001B0D86 /* ui_cocoatouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ui_cocoatouch.m; path = ../../../../ui/drivers/ui_cocoatouch.m; sourceTree = "<group>"; };
 		92E5DCD3231A5786006491BF /* modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = modules; sourceTree = "<group>"; };
 		96366C5416C9AC3300D64A22 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		96366C5816C9ACF500D64A22 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -185,6 +194,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32841F8823975F140024F05B /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				32841F8923975F140024F05B /* drivers */,
+			);
+			name = ui;
+			path = ../../ui;
+			sourceTree = "<group>";
+		};
+		32841F8923975F140024F05B /* drivers */ = {
+			isa = PBXGroup;
+			children = (
+				32841F8A23975F140024F05B /* cocoa */,
+				32841FC123975F140024F05B /* ui_cocoa.h */,
+				32841FC223975F140024F05B /* ui_cocoa.m */,
+				32841FC323975F140024F05B /* ui_cocoatouch.m */,
+			);
+			path = drivers;
+			sourceTree = "<group>";
+		};
+		32841F8A23975F140024F05B /* cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				32841F8B23975F140024F05B /* apple_platform.h */,
+				32841F8C23975F140024F05B /* cocoa_common.h */,
+				32841F8D23975F140024F05B /* cocoa_common.m */,
+				32841F8E23975F140024F05B /* cocoa_defines.h */,
+				32841F8F23975F140024F05B /* cocoatouch_menu.m */,
+				32841F9023975F140024F05B /* ui_cocoa_application.m */,
+				32841F9123975F140024F05B /* ui_cocoa_browser_window.m */,
+				32841F9223975F140024F05B /* ui_cocoa_msg_window.m */,
+				32841F9323975F140024F05B /* ui_cocoa_window.m */,
+			);
+			path = cocoa;
+			sourceTree = "<group>";
+		};
 		83D632D719ECFCC4009E3161 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +244,7 @@
 		926C77D821FD1E6500103EDE /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				32841FCF239760A80024F05B /* retroarch.cfg */,
 				92E5DCD3231A5786006491BF /* modules */,
 				926C77E221FD1E6700103EDE /* Assets.xcassets */,
 				926C77E421FD1E6700103EDE /* Info.plist */,
@@ -286,42 +332,6 @@
 			path = WebServer;
 			sourceTree = "<group>";
 		};
-		92D3D565232D8661001B0D86 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				92D3D566232D867C001B0D86 /* ui */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		92D3D566232D867C001B0D86 /* ui */ = {
-			isa = PBXGroup;
-			children = (
-				92D3D567232D8688001B0D86 /* drivers */,
-				92D3D572232D8AEF001B0D86 /* ui_cocoatouch.m */,
-			);
-			path = ui;
-			sourceTree = "<group>";
-		};
-		92D3D567232D8688001B0D86 /* drivers */ = {
-			isa = PBXGroup;
-			children = (
-				92D3D568232D868E001B0D86 /* cocoa */,
-			);
-			path = drivers;
-			sourceTree = "<group>";
-		};
-		92D3D568232D868E001B0D86 /* cocoa */ = {
-			isa = PBXGroup;
-			children = (
-				92D3D56B232D86AC001B0D86 /* cocoa_common.h */,
-				92D3D56D232D86AC001B0D86 /* cocoa_common.m */,
-				92D3D56F232D86AC001B0D86 /* cocoa_defines.h */,
-				92D3D56C232D86AC001B0D86 /* cocoatouch_menu.m */,
-			);
-			path = cocoa;
-			sourceTree = "<group>";
-		};
 		96AFAE1A16C1D4EA009DE44C = {
 			isa = PBXGroup;
 			children = (
@@ -330,7 +340,7 @@
 				96AFAE9C16C1D976009DE44C /* core */,
 				83D632D719ECFCC4009E3161 /* iOS */,
 				926C77D821FD1E6500103EDE /* tvOS */,
-				92D3D565232D8661001B0D86 /* Sources */,
+				32841F8823975F140024F05B /* ui */,
 				92CC05CC21FF782C00FF79F0 /* WebServer */,
 				96AFAE2816C1D4EA009DE44C /* Frameworks */,
 				96AFAE2616C1D4EA009DE44C /* Products */,
@@ -501,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92CC05BD21FE3C1700FF79F0 /* GCDWebUploader.bundle in Resources */,
+				32841FD0239760A80024F05B /* retroarch.cfg in Resources */,
 				92E5DCD4231A5786006491BF /* modules in Resources */,
 				9222F2002314BA7C0097C0FD /* assets.zip in Resources */,
 				926C77E321FD1E6700103EDE /* Assets.xcassets in Resources */,
