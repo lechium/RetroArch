@@ -611,12 +611,12 @@ static unsigned input_backtouch_toggle       = false;
 
 #define DEFAULT_SHOW_PHYSICAL_INPUTS true
 
-#define DEFAULT_ALL_USERS_CONTROL_MENU false
+#define DEFAULT_ALL_USERS_CONTROL_MENU true
 
 #if defined(ANDROID) || defined(_WIN32)
 #define DEFAULT_MENU_SWAP_OK_CANCEL_BUTTONS true
 #else
-#define DEFAULT_MENU_SWAP_OK_CANCEL_BUTTONS false
+#define DEFAULT_MENU_SWAP_OK_CANCEL_BUTTONS true
 #endif
 
 #define DEFAULT_QUIT_PRESS_TWICE true

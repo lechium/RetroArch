@@ -387,15 +387,18 @@ enum
    
    NSString *newDocs = [self outputPathForFile:filename];
    if (![man fileExistsAtPath:newDocs]){
-      NSLog(@"%@ does not exist! attempting to create it", newDocs);
+      NSLog(@"[RetroArchTV] %@ does not exist! attempting to create it", newDocs);
       [man createDirectoryAtPath:newDocs withIntermediateDirectories:TRUE attributes:nil error:nil];
    }
    //[[self documentsDirectory] stringByAppendingPathComponent:@"RetroArch/downloads"];
    [man moveItemAtPath:[url path] toPath:[newDocs stringByAppendingPathComponent:filename] error:&error];
    
    if (error)
-      printf("%s\n", [[error description] UTF8String]);
-   
+      {
+         NSLog(@"[RetroArchTV] move file error error: %@", [error description]);
+         printf("%s\n", [[error description] UTF8String]);
+         [man copyItemAtPath:[url path] toPath:[newDocs stringByAppendingPathComponent:filename] error:&error];
+   }
    return true;
 }
 
