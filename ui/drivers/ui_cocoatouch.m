@@ -337,6 +337,23 @@ enum
     return _documentsDirectory;
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options {
+    
+    NSFileManager *man = [NSFileManager defaultManager];
+    NSLog(@"[RetroArchTV] host: %@ path: %@", url.host, url.path);
+    NSString *filename = (NSString*)url.path.lastPathComponent;
+    NSError     *error = nil;
+    
+    NSString *newDocs = [[self documentsDirectory] stringByAppendingPathComponent:@"RetroArch/downloads"];
+    
+    [[NSFileManager defaultManager] moveItemAtPath:[url path] toPath:[newDocs stringByAppendingPathComponent:filename] error:&error];
+    
+    if (error)
+        printf("%s\n", [[error description] UTF8String]);
+    
+    return true;
+}
+
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
    char arguments[]   = "retroarch";
